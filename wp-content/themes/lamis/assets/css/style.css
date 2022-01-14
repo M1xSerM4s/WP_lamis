@@ -1,0 +1,132 @@
+@font-face {
+	font-family: Manrope-Regular;
+	src: url(../fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+	font-family: Manrope-Bold;
+	src: url(../fonts/Manrope-Bold.ttf);
+}
+
+@font-face {
+	font-family: Manrope-Medium;
+	src: url(../fonts/Manrope-Medium.ttf);
+}
+
+@font-face {
+	font-family: Manrope-Light;
+	src: url(../fonts/Manrope-Light.ttf);
+}
+
+@font-face {
+	font-family: Manrope-SemiBold;
+	src: url(../fonts/Manrope-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: Manrope-ExtraBold;
+	src: url(../fonts/Manrope-ExtraBold.ttf);
+}
+
+* {
+    line-height: 1;
+    outline: none;
+}
+
+a, a:hover {
+	color: inherit;
+    text-decoration: none;
+}
+
+.container-fluid {
+    max-width: 1920px;
+}
+
+header {
+	position: sticky;
+	top: -58px;
+	z-index: 999;
+}
+
+.title-h2 {
+	font-family: Manrope-Bold;
+	font-size: 42px;
+	color: #00534c;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+}
+
+.p {
+	font-family: Manrope-Regular;
+	font-size: 22px;
+	color: #424242;
+	margin: 0;
+	text-align: center;
+}
+
+@keyframes MoveScaleUpInitial {
+	to {
+		transform: translate3d(0,-105%,0) scale3d(1,2,1);
+		opacity: 0;
+	}
+}
+
+@keyframes MoveScaleUpEnd {
+	from {
+		transform: translate3d(0,100%,0) scale3d(1,2,1);
+		opacity: 0;
+	}
+	to {
+		transform: translate3d(0,0,0);
+		opacity: 1;
+	}
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(0px,0px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+@keyframes line {
+    0%{
+        transform: translateY(-35px);
+    }
+    100%{
+        transform: translateY(135px);
+    }
+}
+
+@media screen and (max-width: 1600px) {
+	.title-h2 {
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width: 1099px) {
+	header {
+		top: 0;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.title-h2 {
+		font-size: 32px;
+	}
+}
+
+@media screen and (max-width: 475px) {
+	.title-h2 {
+		font-size: 28px;
+	}
+}
